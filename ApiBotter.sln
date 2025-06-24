@@ -1,10 +1,40 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35527.113 d17.12
+VisualStudioVersion = 17.12.35527.113
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{039913F1-34BD-4F7F-BE92-46B3FCFC714B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{A6D7266F-17CC-43D6-AE58-3F4B66552AF9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiBotter.Presentation.MauiDesktop", "src\Presentation\ApiBotter.Presentation.MauiDesktop\ApiBotter.Presentation.MauiDesktop.csproj", "{C806EA81-1C09-4BD6-AFED-C2B7FF65B846}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{9D978D00-AFCE-4270-B693-980C8613B7FE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiBotter.Core.Application", "src\Core\ApiBotter.Core.Application\ApiBotter.Core.Application.csproj", "{5ADE6C73-6490-4E70-A777-AB6643C7BCEA}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C806EA81-1C09-4BD6-AFED-C2B7FF65B846}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C806EA81-1C09-4BD6-AFED-C2B7FF65B846}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C806EA81-1C09-4BD6-AFED-C2B7FF65B846}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C806EA81-1C09-4BD6-AFED-C2B7FF65B846}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5ADE6C73-6490-4E70-A777-AB6643C7BCEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5ADE6C73-6490-4E70-A777-AB6643C7BCEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5ADE6C73-6490-4E70-A777-AB6643C7BCEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5ADE6C73-6490-4E70-A777-AB6643C7BCEA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A6D7266F-17CC-43D6-AE58-3F4B66552AF9} = {039913F1-34BD-4F7F-BE92-46B3FCFC714B}
+		{C806EA81-1C09-4BD6-AFED-C2B7FF65B846} = {A6D7266F-17CC-43D6-AE58-3F4B66552AF9}
+		{9D978D00-AFCE-4270-B693-980C8613B7FE} = {039913F1-34BD-4F7F-BE92-46B3FCFC714B}
+		{5ADE6C73-6490-4E70-A777-AB6643C7BCEA} = {9D978D00-AFCE-4270-B693-980C8613B7FE}
 	EndGlobalSection
 EndGlobal
