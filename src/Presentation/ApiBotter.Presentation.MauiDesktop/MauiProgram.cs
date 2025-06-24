@@ -1,4 +1,5 @@
 ﻿using Microsoft.Extensions.Logging;
+using MudBlazor.Services;
 
 namespace ApiBotter.Presentation.MauiDesktop
 {
@@ -14,10 +15,12 @@ namespace ApiBotter.Presentation.MauiDesktop
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                 });
 
+            builder.Services.AddMudServices();
             builder.Services.AddMauiBlazorWebView();
+            // MudBlazor versiyonunu al
 
 #if DEBUG
-    		builder.Services.AddBlazorWebViewDeveloperTools();
+            builder.Services.AddBlazorWebViewDeveloperTools();
     		builder.Logging.AddDebug();
 #endif
 

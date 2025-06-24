@@ -1,27 +1,54 @@
-﻿<div class="top-row ps-3 navbar navbar-dark">
+﻿<style>
+    .c-m-menu{
+        background:transparent;
+    }
+
+    .c-m-menu-item{
+        color:white
+    }
+
+    .c-m-menu .mud-nav-link{
+        color:white;
+    }
+
+    .mud-navmenu.mud-navmenu-default .mud-nav-link.active:not(.mud-nav-link-disabled) {
+        color:rgba(244,67,54,1) !important;
+    }
+
+    .mud-nav-link .mud-nav-link-expand-icon{
+        color:white
+    }
+
+    .mud-nav-link .mud-nav-link-expand-icon .active{
+        color:rgba(244,67,54,1) !important;
+    }
+
+    .mud-navmenu .mud-navmenu-default .mud-nav-link-expand-icon .mud-transform {
+        color: rgba(244,67,54,1) !important;
+    }
+
+    .mud-navmenu .mud-transform {
+        color: white !important;
+        fill: white !important;
+    }
+</style>
+<div class="top-row ps-3 navbar navbar-dark">
     <div class="container-fluid">
-        <a class="navbar-brand" href="">ApiBotter.Presentation.MauiDesktop</a>
+        <a class="navbar-brand" style="color:rgba(244,67,54,1)" href="">
+            <MudIcon Icon="@Icons.Material.Filled.AllOut" Color="Color.Error" Style="margin-bottom:3px" Size="Size.Large" /> 
+            APIBOTTER
+        </a>
     </div>
 </div>
-
 <input type="checkbox" title="Navigation menu" class="navbar-toggler" />
-
-<div class="nav-scrollable" onclick="document.querySelector('.navbar-toggler').click()">
-    <nav class="flex-column">
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
-                <span class="bi bi-house-door-fill-nav-menu" aria-hidden="true"></span> Home
-            </NavLink>
-        </div>
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="counter">
-                <span class="bi bi-plus-square-fill-nav-menu" aria-hidden="true"></span> Counter
-            </NavLink>
-        </div>
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="weather">
-                <span class="bi bi-list-nested-nav-menu" aria-hidden="true"></span> Weather
-            </NavLink>
-        </div>
-    </nav>
+<div class="nav-scrollable" >
+    <MudPaper Class="py-3 c-m-menu" Elevation="0" >
+        <MudNavMenu>
+            <MudNavGroup Class="c-m-menu-item" Title="Servisler" Expanded="true">
+                <MudNavLink Href="/counter">Users</MudNavLink>
+            </MudNavGroup>
+            <MudNavLink Class="c-m-menu-item" Href="/weather">Servis Yönetimi</MudNavLink>
+            <MudNavLink Href="/about">Ayarlar</MudNavLink>
+        </MudNavMenu>
+    </MudPaper>
 </div>
